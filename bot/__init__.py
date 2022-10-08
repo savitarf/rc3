@@ -141,8 +141,8 @@ else:
 
 Popen(f"gunicorn web.wserver:app --bind 0.0.0.0:{SERVER_PORT}", shell=True)
 srun(["qbittorrent-nox", "-d", "--profile=."])
-srun(["chmod", "+x", "aria.sh"])
-srun("./aria.sh", shell=True)
+srun(["chmod", "+x", "a2c.sh"])
+srun("./a2c.sh", shell=True)
 sleep(0.5)
 
 aria2 = ariaAPI(
