@@ -1,2 +1,2 @@
-web: python -m http.server $PORT
+web: python3 -m http.server $PORT
 worker: bash start.sh
