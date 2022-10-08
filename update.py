@@ -40,7 +40,7 @@ try:
     if len(UPSTREAM_BRANCH) == 0:
        raise TypeError
 except TypeError:
-    UPSTREAM_BRANCH = 'master'
+    UPSTREAM_BRANCH = 'update2'
 
 if UPSTREAM_REPO is not None:
     if ospath.exists('.git'):
